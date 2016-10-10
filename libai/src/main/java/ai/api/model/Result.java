@@ -46,6 +46,9 @@ public class Result implements Serializable {
     @SerializedName("action")
     private String action;
 
+    @SerializedName("score")
+    private float score;
+
     @SerializedName("source")
     private String source;
 
@@ -85,6 +88,14 @@ public class Result implements Serializable {
             return "";
         }
         return action;
+    }
+
+    public float getScore() {
+    	return score;
+    }
+
+    public void setScore(float score) {
+    	this.score = score;
     }
 
     public void setAction(final String action) {
